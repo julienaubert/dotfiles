@@ -8,6 +8,8 @@ function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
 	source ~/.bash_profile;
+        rm -rf ~/.vim/bundle/Vundle.vim
+        git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

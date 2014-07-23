@@ -1,0 +1,10 @@
+# do not recall why?
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+# nimrod does not install itself, point to local compiled bin
+export PATH=/Users/julien/Documents/projects/nimrod/bin:$PATH
+export PATH=/Users/julien/.babel/bin:$PATH
+
+# do not recall why?
+export PATH=/usr/local/sbin:$PATH
+
