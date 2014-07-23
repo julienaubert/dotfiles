@@ -10,6 +10,7 @@ function doIt() {
 	source ~/.bash_profile;
         rm -rf ~/.vim/bundle/Vundle.vim
         git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+        vim +PluginInstall +qall
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
