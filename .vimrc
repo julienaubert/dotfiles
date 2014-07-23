@@ -183,7 +183,7 @@ set showcmd
 
 " Spaces are (sometimes) better than a tab character
 let _curfile = expand("%:t")
-if _curfile =~ ".*\.py" ||
+if _curfile =~ ".*\.py"
     set expandtab
     set tabstop=4
     set shiftwidth=4
