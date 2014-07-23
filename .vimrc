@@ -100,7 +100,7 @@ set number
 " Enable syntax highlighting
 syntax on
 " Highlight current line
-set cursorline
+"set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
 " Show “invisible” characters
@@ -122,7 +122,7 @@ set noerrorbells
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
 " Show the cursor position
-"set ruler
+set ruler
 " Don’t show the intro message when starting Vim
 set shortmess=atI
 " Show the current mode
