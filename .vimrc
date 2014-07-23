@@ -104,9 +104,10 @@ set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set lcs=tab:▸\ ,trail:·,nbsp:_
 set list
-" Highlight searches
+" Highlight searches:
 set hlsearch
 " Ignore case of searches
 set ignorecase
@@ -180,9 +181,16 @@ set wildmode=list:longest,full
 " This shows what you are typing as a command.  I love this!
 set showcmd
 
-" Spaces are better than a tab character
-set expandtab
+" Spaces are (sometimes) better than a tab character
+let _curfile = expand("%:t")
+if _curfile =~ ".*\.py" ||
+    set expandtab
+    set tabstop=4
+    set shiftwidth=4
+endif
+
 set smarttab
+
 
 " Who wants an 8 character tab?  Not me!
 set shiftwidth=4
