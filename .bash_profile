@@ -1,5 +1,9 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+export HOME_BIN="$HOME/bin"
+# prefer brew-installs over system installs
+export LOCAL_BIN="/usr/local/bin"
+export PATH="$HOME_BIN/:$LOCAL_BIN:$PATH"
+#export PATH="$HOME/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.

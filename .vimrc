@@ -10,10 +10,13 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
 Plugin 'zah/nimrod.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'embear/vim-localvimrc'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/javascript-libraries-syntax.vim'
 
 
 " The following are examples of different formats supported.
@@ -218,8 +221,7 @@ set hlsearch
 colorscheme blue
 " Remove Toolbar
 set guioptions-=T
-" Terminus is AWESOME
-set guifont=Terminus\ 9
+set guifont=Consolas\ 9
 
 
 " Ignoring case is a fun trick
