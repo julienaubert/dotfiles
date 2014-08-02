@@ -1,6 +1,9 @@
 # do not recall why? (probably something brew installed that needs to be seen first)
 #export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
+# node global modules
+export NODE_PATH=/usr/local/lib/node_modules
+
 # nimrod does not install itself, point to local compiled bin
 export PATH=/Users/julien/Documents/projects/nimrod/bin:$PATH
 export PATH=/Users/julien/.babel/bin:$PATH
