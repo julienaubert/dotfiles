@@ -8,6 +8,6 @@ export NODE_PATH=/usr/local/lib/node_modules
 export PATH=/Users/julien/Documents/projects/nimrod/bin:$PATH
 export PATH=/Users/julien/.babel/bin:$PATH
 
-# do not recall why?
-#export PATH=/usr/local/sbin:$PATH
+# homebrew
+export PATH=/usr/local/sbin:$PATH
 
